@@ -1,0 +1,82 @@
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  --font-family: "Inter", sans-serif;
+  --main: #101828;
+  --text: #475467;
+  --white: #fff;
+  --button: #e44848;
+  --button-hover: #d84343;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.button {
+  font: 500 16px / 150% var(--font-family);
+  letter-spacing: -0.08px;
+  color: var(--white);
+
+  border-radius: 200px;
+  padding: 16px 60px;
+  background: var(--button);
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  border-radius: 200px;
+  background: var(--button-hover);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

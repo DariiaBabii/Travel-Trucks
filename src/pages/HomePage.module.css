@@ -1,0 +1,49 @@
+.home-container {
+  background: url("../../inserts/images/Hero.png") no-repeat;
+  background-size: cover;
+  height: 696px;
+  width: 100%;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  color: var(#f7f7f7);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.subheading {
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(#f7f7f7);
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.button {
+  font-family: Inter;
+  letter-spacing: -0.01em;
+  color: var(--white);
+
+  border-radius: 200px;
+  padding: 16px 60px;
+  background: var(--button);
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: var(--button-hover);
+}
