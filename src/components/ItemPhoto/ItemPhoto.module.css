@@ -1,0 +1,23 @@
+.containerPhoto {
+  width: 292px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.itemPhoto {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.itemDetailList {
+  width: 292px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  height: 312px;
+  margin-top: 28px;
+}

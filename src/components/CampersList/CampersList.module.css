@@ -1,0 +1,10 @@
+.camperBox {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  border-radius: 20px;
+  background: #fff;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}

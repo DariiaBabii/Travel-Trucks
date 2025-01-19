@@ -1,41 +1,55 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  selectedFilters: [],
-  selectedType: "",
-  selectedLocation: "",
+  filters: {
+    type: "",
+    location: "",
+    others: [],
+  },
 };
 
 const filtersSlice = createSlice({
   name: "filters",
   initialState,
   reducers: {
-    setSelectedFilters(state, action) {
-      state.selectedFilters = action.payload;
+    updateFilter(state, action) {
+      const { key, value } = action.payload;
+      if (key in state.filters) {
+        state.filters[key] = value;
+      } else {
+        console.warn(`Invalid filter key: ${key}`);
+      }
     },
-    setSelectedType(state, action) {
-      state.selectedType = action.payload;
+    resetFilters(state) {
+      state.filters = { type: "", location: "", others: [] };
     },
-    setSelectedLocation(state, action) {
-      state.selectedLocation = action.payload;
+    addCustomFilter(state, action) {
+      const filterName = action.payload;
+      if (!state.filters.others.includes(filterName)) {
+        state.filters.others.push(filterName);
+      }
     },
-    clearFilters(state) {
-      state.selectedFilters = [];
-      state.selectedType = "";
-      state.selectedLocation = "";
+    removeCustomFilter(state, action) {
+      const filterName = action.payload;
+      state.filters.others = state.filters.others.filter(
+        (filter) => filter !== filterName
+      );
     },
   },
 });
 
 export const {
-  clearFilters,
-  setSelectedFilters,
-  setSelectedType,
-  setSelectedLocation,
+  updateFilter,
+  resetFilters,
+  addCustomFilter,
+  removeCustomFilter,
 } = filtersSlice.actions;
 
-export const selectSelectedFilters = (state) => state.filters.selectedFilters;
-export const selectSelectedType = (state) => state.filters.selectedType;
-export const selectSelectedLocation = (state) => state.filters.selectedLocation;
+export const selectFilterByKey = (key) => (state) =>
+  state.filters.filters[key] || null;
+
+export const selectAllFilters = (state) => state.filters.filters;
+
+export const selectSelectedFilters = (state) => state.filters.filters;
 
 export default filtersSlice.reducer;

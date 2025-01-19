@@ -1,0 +1,149 @@
+.form {
+  width: 360px;
+  flex-basis: 360px;
+  flex-shrink: 0;
+}
+
+.container {
+  padding: 48px 64px;
+  display: flex;
+  gap: 64px;
+}
+
+.label {
+  display: block;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #6c717b;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../images/icon-map.svg");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  padding: 18px 36px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: var(--Inputs, #f7f7f7);
+  width: 100%;
+  color: var(--Main, #101828);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  gap: 8px;
+}
+
+.filterItem,
+.filterItem_type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #dadde1;
+  width: 112px;
+  height: 96px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.filterImage {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.filterItem:hover .filterImage,
+.filterItem.active .filterImage {
+  fill: var(--Button, #e44848);
+}
+
+.filterItem:hover,
+.filterItem.active {
+  border: 1px solid var(--Button, #e44848);
+}
+
+.filter {
+  color: #475467;
+}
+
+.filterTitle {
+  padding: 32px 24px;
+  border-bottom: 1px solid #dadde1;
+  margin-bottom: 24px;
+}
+
+.filterName {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #101828;
+}
+
+.filterName:hover {
+  color: #101828;
+}
+
+.button {
+  border-radius: 200px;
+  border-color: transparent;
+  background-color: #e44848;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  padding: 16px 60px;
+}
+
+.button:hover {
+  background-color: #d84343;
+  transform: scale(0.95);
+  transition-duration: 0.5s;
+}
+
+.buttonMore {
+  display: block;
+  padding: 16px 32px;
+  border-radius: 200px;
+  background-color: white;
+  border: 1px solid #dadde1;
+  color: #101828;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 40px auto;
+}
+
+.buttonMore:hover {
+  border-color: #d84343;
+  transform: scale(0.95);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}

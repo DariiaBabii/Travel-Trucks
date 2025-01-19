@@ -1,0 +1,28 @@
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-family: Inter;
+  color: #101828;
+  text-decoration: none;
+  padding-left: 32px;
+}
+
+.link:hover {
+  color: #d84343;
+}
+
+.active {
+  color: #d84343;
+}
+
+.header {
+  padding: 24px 64px;
+  align-items: center;
+  border-bottom: 1px solid #f2f4f7;
+  background: var(--Inputs, #f7f7f7);
+  display: flex;
+  justify-content: flex-start;
+}
+.logo {
+  padding-right: 450px;
+}

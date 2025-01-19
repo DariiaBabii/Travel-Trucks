@@ -1,0 +1,83 @@
+.containerDetails {
+  padding: 48px 64px 0 64px;
+}
+
+.contentTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #101828;
+}
+
+.imgMap {
+  width: 16px;
+  height: 16px;
+}
+
+.info {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.infoLocation {
+  margin-left: 16px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.rate {
+  border-bottom: 1px solid #101828;
+}
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 28px;
+}
+
+.descriptionDetails {
+  width: 1312px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.subNav {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--Gray-light, #dadde1);
+}
+
+.subLink {
+  color: var(--Main, #101828);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 40px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.subLinkActive::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 80px;
+  height: 6px;
+  background-color: var(--Button, #e44848);
+  transition: width 0.3s ease-in-out;
+}

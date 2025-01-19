@@ -1,8 +1,34 @@
+#root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  width: 100%;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --white: #ffffff;
+  --inputs: #f9f9f9;
+  --gray-light: #e1e4e8;
+  --gray: #6e747d;
+  --text: #4a5568;
+  --main: #0f172a;
+  --badges: #f5f7fa;
+  --button-hover: #e03c3c;
+  --button: #f05454;
+  --rating: #ffcd38;
+}
+
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--white);
   display: flex;
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -12,71 +38,38 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--main);
+}
+
 p {
   margin: 0;
+  color: var(--gray);
 }
 
 ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  padding: 12px;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+  background-color: var(--inputs);
+  width: 100%;
+  box-sizing: border-box;
 }
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  --font-family: "Inter", sans-serif;
-  --main: #101828;
-  --text: #475467;
-  --white: #fff;
-  --button: #e44848;
-  --button-hover: #d84343;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-.button {
-  font: 500 16px / 150% var(--font-family);
-  letter-spacing: -0.08px;
-  color: var(--white);
-
-  border-radius: 200px;
-  padding: 16px 60px;
-  background: var(--button);
-  text-decoration: none;
-  display: inline-block;
+input:focus,
+textarea:focus {
+  border-color: var(--button);
   outline: none;
-  border: none;
-  cursor: pointer;
-}
-.button:hover {
-  border-radius: 200px;
-  background: var(--button-hover);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }

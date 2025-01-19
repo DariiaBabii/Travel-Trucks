@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin: 44px 64px;
+}
+.reviewContainer {
+  width: 50%;
+  border-radius: 10px;
+  max-width: 641px;
+}
+
+.specification {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  color: #101828;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #dadde1;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.row {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: #101828;
+  text-align: center;
+  font-family: Inter;
+}
+
+.desc {
+  color: var(--Gray, #6c717b);
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.input {
+  padding: 18px;
+  width: 100%;
+  max-width: 507px;
+  border-color: transparent transparent transparent;
+  border-radius: 12px;
+  line-height: 24px;
+  margin-bottom: 14px;
+  background: #f7f7f7;
+  font-weight: 400;
+  color: #6c717b;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  margin-right: 44px;
+}
+
+.textBlock {
+  display: flex;
+  width: 100%;
+  max-width: 507px;
+  padding: 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  margin-bottom: 24px;
+  border-color: transparent;
+}
+
+.submitButton {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: #d84343;
+  transform: scale(0.95);
+  transition-duration: 0.5s;
+}
+
+span:not(:last-child)::after {
+  content: "";
+}
+
+.titleBlock {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.comment {
+  font-style: normal;
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e44848;
+  font-family: Inter;
+  font-size: 24px;
+  text-align: center;
+  margin-right: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.img {
+  display: inline-block;
+}
+
+.review {
+  margin-bottom: 44px;
+}
+
+.reviewText {
+  color: #475467;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
