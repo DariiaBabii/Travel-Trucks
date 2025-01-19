@@ -1,82 +1,54 @@
-# TravelTrucks Camper Rental Web App
+# TravelTrucks Rental Web App
 
-This project is the frontend part of a web application for **TravelTrucks**, a company that rents out campers. The app includes a home page, a catalog page with available campers, and detailed camper pages where users can view camper details, read reviews, and make bookings.
+This project represents the frontend component of a web application for TravelTrucks, a camper rental company. The application features a main landing page, a catalog showcasing available campers, and individual camper pages that allow users to explore detailed information, read reviews, and make reservations.
 
-## Project Structure
+### Technologies Used
 
-The project is built with the following technologies:
+Vite — For fast project setup and development.
 
--   **React** (with Vite bundler)
--   **Redux** for state management
--   **React Router** for client-side routing
--   **Axios** for making API requests
--   **CSS Modules** (or another CSS solution you may choose)
+React — For building user interfaces.
 
-### Key API Endpoints
+Redux — For state management.
 
-The app communicates with a backend API available at: `https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers`
+React Router — For routing between pages.
 
--   **GET /campers**: Retrieves all campers with optional filtering parameters.
--   **GET /campers/**
-    
-    : Retrieves details for a specific camper by ID.
+Axios — For handling HTTP requests.
 
-## Pages
+CSS Modules — For styling components.
 
-1.  **Home Page (`/`)**
-    
-    -   Displays a banner with a call-to-action button leading to the catalog page.
-2.  **Catalog Page (`/catalog`)**
-    
-    -   Lists all available campers with filtering options for location, vehicle type, and features like AC, kitchen, etc.
-    -   Users can add campers to a favorites list.
-    -   Supports loading more campers as the user scrolls or clicks "Load More".
-3.  **Camper Details Page (`/catalog/:id`)**
-    
-    -   Shows detailed information about a camper (e.g., engine, transmission, features like AC, kitchen).
-    -   Displays user reviews with star ratings.
-    -   Includes a booking form for reserving the camper.
+### The web application consists of three pages:
 
-## Features
+- HomePage: contains a banner, navigation, and a "View Now" button that redirects to the CatalogPage.
+- CatalogPage: a page displaying all available vehicles with filtering options based on specific criteria (location, type of transport, availability of additional equipment such as an air conditioner or kitchen) and the ability to add a camper to favorites.
+- CamperPage: a detailed camper page featuring a comprehensive description of the selected camper, a photo gallery, user reviews, and a booking form.
 
--   **Filtering**: Users can filter campers by location, vehicle type, and features like AC, kitchen, etc.
--   **Favorites**: Users can add and remove campers from a favorites list. The list persists after page reload.
--   **Pagination**: The catalog page allows users to load more campers as needed.
--   **Reviews**: The camper details page shows user reviews with a 5-star rating system.
--   **Booking**: Users can book a camper through a form. A toast notification confirms successful booking.
--   **Responsive Design**: The app is designed for desktop, with optional responsiveness for mobile devices.
+### Installation and Setup
 
-## Installation and Setup
+1. Clone the repository:
 
-1.  Clone the repository:
-2. 
-    `git clone https://github.com/your-repository/traveltrucks.git
-    cd traveltrucks` 
-    
-3.  Install dependencies:
-   
+```
+git clone https://github.com/your-repository/traveltrucks.git
+cd traveltrucks
+```
 
-    `npm install` 
-    
-4.  Start the development server:
+2. Install dependencies:
 
-    `npm run dev` 
-    
-5.  To build the project for production:
-    
-    `npm run build` 
-    
-6.  Deploy the project (for example, on Vercel or Netlify).
-    
+```
+npm install
+```
 
-## Deployment
+3.Start the development server:
 
-The project is deployed and live at: [https://react-test-urtr.vercel.app/]
+```
+npm run dev
+```
 
-## Project Requirements
+4. Build the project for production:
 
--   **React** with Vite as the bundler.
--   **Redux** for state management.
--   **Axios** for API calls.
--   **React Router** for routing.
--   **CSS Modules** (or other CSS library of your choice).
+```
+npm run build
+```
+
+5. Deploy the project (e.g., on Vercel or Netlify).
+
+   The project is deployed and live at: [https://react-test-urtr.vercel.app/]
